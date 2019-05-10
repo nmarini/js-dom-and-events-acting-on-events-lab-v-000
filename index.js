@@ -6,6 +6,7 @@ function preventRefreshOnSubmit(){
 
 preventRefreshOnSubmit()
 
+const ul = document.querySelector('.employee-list')
 let input = document.querySelector('input')
 
 function retrieveEmployeeInformation(){
@@ -13,14 +14,11 @@ function retrieveEmployeeInformation(){
 }
 
 function addNewElementAsLi(){
-  const ul = document.querySelector('.employee-list')
   let li = document.createElement("LI")
   li.innerHTML = retrieveEmployeeInformation()
   ul.appendChild(li)
 }
 
-// addNewLiOnClick():
-// This adds the employee name as an li element on click and clears the input value.
 function addNewLiOnClick(){
   let submit = document.querySelector('input[type="submit"]')
   submit.addEventListener('click', function(e){
@@ -32,3 +30,9 @@ function addNewLiOnClick(){
 
 // clearEmployeeListOnLinkClick():
 // This empties out the employee list when "Clear employee list" button clicked.
+function clearEmployeeListOnLinkClick(){
+    let clear = document.querySelector('a')
+    clear.addEventListener('click', function(e){
+      
+    })
+}
