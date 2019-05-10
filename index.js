@@ -14,8 +14,8 @@ function retrieveEmployeeInformation(){
 }
 
 function addNewElementAsLi(){
-  // let li = document.createElement("LI")
-  // li.innerHTML = retrieveEmployeeInformation()
+  let li = document.createElement("LI")
+  li.innerHTML = retrieveEmployeeInformation()
   ul.appendChild(retrieveEmployeeInformation())
 }
 
