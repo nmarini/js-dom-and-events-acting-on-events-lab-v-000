@@ -6,7 +6,6 @@ function preventRefreshOnSubmit(){
 
 preventRefreshOnSubmit()
 
-const ul = document.querySelector('.employee-list')
 let input = document.querySelector('input')
 
 function retrieveEmployeeInformation(){
@@ -14,24 +13,27 @@ function retrieveEmployeeInformation(){
 }
 
 function addNewElementAsLi(){
-  let li = document.createElement("LI")
-  li.innerHTML = retrieveEmployeeInformation()
-  ul.appendChild(li)
+  let employeeName = retrieveEmployeeInformation()
+  document.querySelector('.employee-list').insertAdjacentHTML('beforeend', `<li>${employeeName}</li>`)
 }
+
 
 function addNewLiOnClick(){
   let submit = document.querySelector('input[type="submit"]')
-  submit.addEventListener('click', function(e){
-    addNewElementAsLi();
-    input.value = ""
+  submit.addEventListener('click', function(event){
+    addNewElementAsLi()
+    resetInput()
   })
-
 }
 
-
 function clearEmployeeListOnLinkClick(){
-    let clear = document.querySelector('a')
-    clear.addEventListener('click', function(e){
-      ul.innerHTML = '';
-    })
+  let link = document.querySelector('a')
+  let ul = document.querySelector('ul')
+  link.addEventListener('click', function(event){
+    ul.innerHTML = ''
+  })
+}
+
+function resetInput(){
+  document.querySelector('input').value = ''
 }
