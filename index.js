@@ -18,15 +18,15 @@ function addNewElementAsLi(){
   li.innerHTML = retrieveEmployeeInformation()
   ul.appendChild(li)
 }
-
-function addNewLiOnClick(){
-  let submit = document.querySelector('input[type="submit"]')
-  submit.addEventListener('click', function(e){
-    addNewElementAsLi();
-    input.value = ""
-  })
-
-}
+// 
+// function addNewLiOnClick(){
+//   let submit = document.querySelector('input[type="submit"]')
+//   submit.addEventListener('click', function(e){
+//     addNewElementAsLi();
+//     input.value = ""
+//   })
+// 
+// }
 
 //
 // function clearEmployeeListOnLinkClick(){
