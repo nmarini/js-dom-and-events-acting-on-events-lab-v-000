@@ -14,7 +14,7 @@ function retrieveEmployeeInformation(){
 
 function addNewElementAsLi(){
   const ul = document.querySelector('.employee-list')
-  ul.appendChild(`<li>${retrieveEmployeeInformation()}</li>`)
+  ul.appendChild(retrieveEmployeeInformation())
 }
 
 // addNewLiOnClick():
