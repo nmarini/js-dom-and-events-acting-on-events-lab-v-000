@@ -23,7 +23,7 @@ function addNewElementAsLi(){
 // This adds the employee name as an li element on click and clears the input value.
 function addNewLiOnClick(){
   let submit = document.querySelector('input[type="submit"]')
-  submit.addEventListener('click', function(c){
+  submit.addEventListener('click', function(e){
 
   })
 
