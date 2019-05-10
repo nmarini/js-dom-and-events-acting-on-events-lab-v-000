@@ -28,8 +28,7 @@ function addNewLiOnClick(){
 
 }
 
-// clearEmployeeListOnLinkClick():
-// This empties out the employee list when "Clear employee list" button clicked.
+
 function clearEmployeeListOnLinkClick(){
     let clear = document.querySelector('a')
     clear.addEventListener('click', function(e){
