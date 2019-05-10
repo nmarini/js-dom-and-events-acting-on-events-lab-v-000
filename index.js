@@ -28,10 +28,10 @@ function addNewLiOnClick(){
 
 }
 
-
-function clearEmployeeListOnLinkClick(){
-    let clear = document.querySelector('a')
-    clear.addEventListener('click', function(e){
-      ul.innerHTML = '';
-    })
-}
+// 
+// function clearEmployeeListOnLinkClick(){
+//     let clear = document.querySelector('a')
+//     clear.addEventListener('click', function(e){
+//       ul.innerHTML = '';
+//     })
+// }
