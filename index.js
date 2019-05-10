@@ -18,7 +18,7 @@ function retrieveEmployeeInformation(){
 // element which is appended to the ul with class "employee-list".
 function addNewElementAsLi(){
   const ul = document.querySelector('ul.employee-list')
-  return ul.append(retrieveEmployeeInformation)
+  return ul.append(retrieveEmployeeInformation())
 }
 
 // addNewLiOnClick():
